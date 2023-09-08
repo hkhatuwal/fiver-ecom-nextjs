@@ -8,7 +8,7 @@ const Navbar = () => {
     const [isVisible,setIsVisible]=useState(false)
 
     return (
-        <nav className="absolute flex items-center justify-between flex-wrap lg:px-40  px-5    py-5  w-full z-10 top-0 ">
+        <nav className="absolute flex items-center justify-between flex-wrap lg:px-40  px-2    py-5  w-full z-10 top-0 ">
             <div className="flex items-center flex-shrink-0 text-white mr-6">
                 <Link className="text-white no-underline hover:text-white hover:no-underline" href="/">
                     <Image className={'w-16 lg:w-48'} src={'/assets/images/logo.png'} alt={'Logo'} height={150} width={150}/>

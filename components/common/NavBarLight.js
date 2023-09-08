@@ -10,7 +10,7 @@ const NavbarLight = () => {
     const [isVisible,setIsVisible]=useState(false)
 
     return (
-        <nav className="absolute flex items-center justify-between flex-wrap lg:px-40  px-5    py-5  w-full z-10 top-0 ">
+        <nav className="absolute flex items-center justify-between flex-wrap lg:px-40  px-2    py-5  w-full z-10 top-0 ">
             <div className="flex items-center flex-shrink-0 text-white mr-6">
                 <Link className="text-white no-underline hover:text-white hover:no-underline" href="/">
                     <Image className={'w-16 lg:w-48'} src={Logo} alt={'Logo'} height={150} width={150}/>
@@ -28,7 +28,7 @@ const NavbarLight = () => {
                 </button>
             </div>
 
-            <div className={`w-full flex-grow lg:flex lg:items-center lg:w-auto lg:bg-none  h-screen lg:h-auto  pt-6 lg:pt-0 ${isVisible?'bg-green_dark absolute top-[8vh] left-0 z-50':'hidden'}`}
+            <div className={`w-full flex-grow lg:flex lg:items-center lg:w-auto lg:bg-none  h-screen lg:h-auto  pt-6 lg:pt-0 ${isVisible?'bg-white absolute top-[8vh] left-0 z-50':'hidden'}`}
                  id="nav-content">
 
                 <ul className="list-reset lg:flex justify-end flex-1 items-center text-xl tracking-wider">
