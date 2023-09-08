@@ -1,6 +1,0 @@
-{
-  "/page": "app/page.js",
-  "/favicon.ico/route": "app/favicon.ico/route.js",
-  "/product/[slug]/page": "app/product/[slug]/page.js",
-  "/search/[[...filters]]/page": "app/search/[[...filters]]/page.js"
-}

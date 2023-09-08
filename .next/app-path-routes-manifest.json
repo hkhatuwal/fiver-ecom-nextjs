@@ -1,6 +1,0 @@
-{
-  "/page": "/",
-  "/favicon.ico/route": "/favicon.ico",
-  "/product/[slug]/page": "/product/[slug]",
-  "/search/[[...filters]]/page": "/search/[[...filters]]"
-}

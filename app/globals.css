@@ -21,3 +21,8 @@
 .wrapper{
     max-width:1040px ;
 }
+
+
+input,textarea{
+    @apply px-5
+}
