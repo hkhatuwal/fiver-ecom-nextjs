@@ -45,7 +45,7 @@ const Products = () => {
                     clickable: true,
                 }}
                 modules={[Pagination]}
-                className="mySwiper h-96 m-auto mt-5"
+                className="mySwiper  m-auto mt-5 lg:h-96"
             >
                 {products.map((product)=><SwiperSlide key={product.title}>
                     <Product {...product}/>
@@ -81,7 +81,7 @@ const Products = () => {
                     clickable: true,
                 }}
                 modules={[Pagination]}
-                className="mySwiper h-96"
+                className="mySwiper lg:h-96"
             >
                 {products.sort(()=>.5 - Math.random()).map((product)=><SwiperSlide key={product.title+"2"}>
                     <Product {...product}/>
