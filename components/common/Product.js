@@ -1,7 +1,6 @@
 import React from 'react';
 import Image from "next/image";
 import {BsStar, BsStarFill} from "react-icons/bs";
-import {redirect} from "next/navigation";
 import Link from "next/link";
 
 const Product = ({slug,image,title,price,rating,hideRating=false,hidePrice=false}) => {
