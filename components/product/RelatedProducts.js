@@ -4,7 +4,7 @@ import Product from "@/components/common/Product";
 
 const RelatedProducts = () => {
     return (
-        <div className={'lg:px-40 flex flex-col gap-y-3 py-16'}>
+        <div className={'lg:px-40 px-3 flex flex-col gap-y-3 py-16'}>
             <h1 className={' font-bold uppercase text-5xl khula-family'}>Related Products</h1>
 
             <div className="products flex flex-row gap-y-3 flex-wrap justify-between">

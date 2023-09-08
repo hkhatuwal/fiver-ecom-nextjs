@@ -3,7 +3,7 @@ import {BiCart, BiSearch} from "react-icons/bi";
 
 const SearchArea = () => {
     return (
-        <div className={'mt-28 p-3 lg:h-24  bg-green_dark lg:px-40 px-2 flex flex-col lg:flex-row lg:items-center justify-between gap-5'
+        <div className={'mt-16 lg:mt-28 p-3 lg:h-24  bg-green_dark lg:px-40 px-2 flex flex-col lg:flex-row lg:items-center justify-between gap-5'
         }>
             <h1 className={'uppercase text-4xl font-bold text-white '}>FiberiTech</h1>
 

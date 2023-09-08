@@ -26,7 +26,7 @@ const Navbar = () => {
                 </button>
             </div>
 
-                <div className={`w-full flex-grow lg:flex lg:items-center xl:w-auto lg:bg-none  h-screen xl:h-auto  pt-6 lg:pt-0  ${isVisible?'bg-green_dark':'hidden'}`}
+                <div className={`w-full flex-grow lg:flex lg:items-center xl:w-auto lg:bg-none  h-screen xl:h-auto  pt-6 lg:pt-0  ${isVisible?'bg-green_dark absolute top-[10vh] left-0 z-50':'hidden'}`}
                  id="nav-content">
                 <ul className="list-reset lg:flex justify-end flex-1 items-center text-xl tracking-wider">
                     <li className="mr-3">

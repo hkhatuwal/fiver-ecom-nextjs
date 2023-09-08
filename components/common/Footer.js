@@ -59,14 +59,13 @@ const Footer = () => {
                                 </li>
                             </ul>
                         </div>
-                        <div>
+                        <div className="col-span-3 lg:col-auto">
                             <h2 className="mb-6 text-2xl font-semibold text-green">Join Our Newsletter</h2>
-                            <h2 className={'text-white text-2xl'}>Send Email To Join</h2>
-                            <div className={'p-1 bg-white flex mt-2 rounded'}>
-                                <input type="email" className={' border-none '} placeholder={'Send Email'}/>
-                                <button className={'bg-green_dark p-2 rounded text-white'}><BiSend size={22}/></button>
+                            <h2 className="text-white text-2xl">Send Email To Join</h2>
+                            <div className="p-1 bg-white flex mt-2 rounded">
+                                <input type="email" className="border-none w-full" placeholder="Send Email" />
+                                <button className="bg-green_dark p-2 rounded text-white"><BiSend size={22} /></button>
                             </div>
-
                         </div>
 
 
