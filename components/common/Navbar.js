@@ -49,7 +49,7 @@ const Navbar = () => {
                         <a className="inline-block py-2 px-4 text-white no-underline rounded-full border border-[#158319] "
                            href="#">Contact Us</a>
                     </li>
-                    <li className="mt-4 ml-4 flex gap-2 items-center">
+                    <li className="mt-4 lg:mt-0 ml-4 flex gap-2 items-center">
                         <Image src={GlobeIcon} alt={"Language Icon"}/>
 
                         <span className={'text-white'}>en</span>

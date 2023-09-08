@@ -52,8 +52,9 @@ const NavbarLight = () => {
                         <a className="inline-block py-2 px-4  no-underline rounded-full border border-[#158319] "
                            href="#">Contact Us</a>
                     </li>
-                    <li className="mt-4 ml-4 flex gap-2 items-center">
-                        <Image src={GlobeIcon} alt={"Language Icon"}/>
+                    <li className="mt-4 lg:mt-0 ml-4 flex gap-2 items-center">
+
+                    <Image src={GlobeIcon} alt={"Language Icon"}/>
 
                         <span className={'text-white'}>en</span>
                         <span className={'h-5 w-0.5 bg-white/60'}></span>
