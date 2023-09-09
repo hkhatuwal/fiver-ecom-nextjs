@@ -37,8 +37,8 @@ const Hero = () => {
                     </Swiper>
 
                     <div className={'flex gap-1 w-full justify-center mt-5'}>
-                        <IoIosArrowBack onClick={()=>{swiper.slidePrev()}} className={'bg-green w-10 h-10 rounded-full p-2 text-white cursor-pointer'} size={22}/>
-                        <IoIosArrowForward onClick={()=>{swiper.slideNext()}} className={'border border-green   w-10 h-10 rounded-full cursor-pointer p-2 text-green'}
+                        <IoIosArrowBack onClick={()=>{swiper.slidePrev()}} className={'bg-green w-10 h-10 rounded-full p-2 text-white cursor-pointer hover:bg-green/50'} size={22}/>
+                        <IoIosArrowForward onClick={()=>{swiper.slideNext()}} className={'border border-green   w-10 h-10 rounded-full cursor-pointer p-2 text-green hover:bg-green/50'}
                                            size={22}/>
                     </div>
 
