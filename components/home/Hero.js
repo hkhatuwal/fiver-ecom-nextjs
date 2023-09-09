@@ -1,4 +1,5 @@
-import React from 'react';
+"use client"
+import React, {useState} from 'react';
 import Image from "next/image";
 import HeroImage from "@/public/assets/images/hero-image.png"
 
@@ -6,25 +7,38 @@ import {Khula} from 'next/font/google'
 import {IoIosArrowBack, IoIosArrowForward} from "react-icons/io";
 import Button from "@/components/common/Button";
 import Link from "next/link";
+import {Swiper, SwiperSlide} from "swiper/react";
 
 
 const khula = Khula({subsets: ['latin'], weight: ['700']})
+// Import Swiper styles
+import "swiper/css";
 
 const Hero = () => {
+
+    const [swiper, setSwiper] = useState(null);
+
+    const slideTo = (index) => {
+        if (swiper)
+            swiper.slideTo(index)
+    };
     return (
         <div className={' md:px-8 py-16  md:py-40   '}>
 
             <div className="flex flex-col md:flex-row-reverse justify-between items-center gap-y-2 ">
 
 
-
                 <div className="left w-full md:w-5/12  flex justify-center flex-col items-end">
-                    <Image className={'w-full h-60 md:h-full p-2'} src={HeroImage} alt={"Hero image"}/>
 
+                    <Swiper onSwiper={setSwiper} className="mySwiper w-full h-full">
+                        <SwiperSlide><Image className={'w-full h-60 md:h-full p-2'} src={HeroImage} alt={"Hero image"}/></SwiperSlide>
+                        <SwiperSlide><Image className={'w-full h-60 md:h-full p-2'} src={HeroImage} alt={"Hero image"}/></SwiperSlide>
+
+                    </Swiper>
 
                     <div className={'flex gap-1 w-full justify-center mt-5'}>
-                        <IoIosArrowBack className={'bg-green w-10 h-10 rounded-full p-2 text-white'} size={22}/>
-                        <IoIosArrowForward className={'border border-green   w-10 h-10 rounded-full p-2 text-green'}
+                        <IoIosArrowBack onClick={()=>{swiper.slidePrev()}} className={'bg-green w-10 h-10 rounded-full p-2 text-white cursor-pointer'} size={22}/>
+                        <IoIosArrowForward onClick={()=>{swiper.slideNext()}} className={'border border-green   w-10 h-10 rounded-full cursor-pointer p-2 text-green'}
                                            size={22}/>
                     </div>
 
