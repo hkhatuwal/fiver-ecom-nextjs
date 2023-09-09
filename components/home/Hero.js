@@ -30,7 +30,7 @@ const Hero = () => {
 
                 <div className="left w-full md:w-5/12  flex justify-center flex-col items-end">
 
-                    <Swiper onSwiper={setSwiper} className="mySwiper w-full h-full">
+                    <Swiper loop={true} onSwiper={setSwiper} className="mySwiper w-full h-full">
                         <SwiperSlide><Image className={'w-full h-60 md:h-full p-2'} src={HeroImage} alt={"Hero image"}/></SwiperSlide>
                         <SwiperSlide><Image className={'w-full h-60 md:h-full p-2'} src={HeroImage} alt={"Hero image"}/></SwiperSlide>
 
