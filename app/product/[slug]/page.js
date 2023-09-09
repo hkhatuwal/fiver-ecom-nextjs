@@ -28,7 +28,7 @@ const ProductPage = ({params}) => {
 
             <ProductOverview product={product}/>
             {/* Description */}
-            <div className={'px-2 lg:px-40 flex flex-col gap-y-3 py-16'}>
+            <div className={'px-2 lg:px-40 flex flex-col gap-y-3 lg:py-16'}>
                 <h1 className={'text-4xl uppercase font-bold'}>Description</h1>
                 <p>{product.description}</p>
 

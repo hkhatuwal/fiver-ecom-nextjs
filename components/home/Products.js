@@ -47,7 +47,7 @@ const Products = () => {
                 modules={[Pagination]}
                 className="mySwiper  m-auto mt-5 lg:h-96"
             >
-                {products.map((product)=><SwiperSlide key={product.title}>
+                {products.map((product)=><SwiperSlide className={'py-8'} key={product.title}>
                     <Product {...product}/>
                 </SwiperSlide>)}
                
@@ -83,7 +83,7 @@ const Products = () => {
                 modules={[Pagination]}
                 className="mySwiper lg:h-96"
             >
-                {products.sort(()=>.5 - Math.random()).map((product)=><SwiperSlide key={product.title+"2"}>
+                {products.sort(()=>.5 - Math.random()).map((product)=><SwiperSlide className={'py-8'} key={product.title+"2"}>
                     <Product {...product}/>
                 </SwiperSlide>)}
 

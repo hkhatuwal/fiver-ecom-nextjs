@@ -23,14 +23,14 @@ const Hero = () => {
             swiper.slideTo(index)
     };
     return (
-        <div className={'lg:px-40 md:px-8 py-16  md:py-40   '}>
+        <div className={'lg:px-40 md:px-8 py-16  md:pt-32 md:pb-12   '}>
 
             <div className="flex flex-col md:flex-row-reverse justify-between items-center gap-y-2 ">
 
 
-                <div className="left w-full md:w-5/12  flex justify-center flex-col items-end">
+                <div className="left w-full md:w-5/12  flex justify-center flex-col items-end select-none">
 
-                    <Swiper loop={true} onSwiper={setSwiper} className="mySwiper w-full h-full">
+                    <Swiper loop={true} onSwiper={setSwiper} className="mySwiper w-full h-full lg:w-[80%] lg:h-[80%]">
                         <SwiperSlide><Image className={'w-full h-60 md:h-full p-2'} src={HeroImage} alt={"Hero image"}/></SwiperSlide>
                         <SwiperSlide><Image className={'w-full h-60 md:h-full p-2'} src={HeroImage} alt={"Hero image"}/></SwiperSlide>
 
@@ -48,7 +48,7 @@ const Hero = () => {
                         Your Network with High-Quality
                         <span className={'text-green'}> Fiber Equipment</span></h1>
 
-                    <p className={'text-white/70 text-xs'}>
+                    <p className={'text-white/70 text-xs select-none'}>
                         Sed ut perspiciatis unde omnis iste natus error voluptatem accusantium doloremque laudantium,
                         totam rem aperiam, eaque ipsa
                     </p>

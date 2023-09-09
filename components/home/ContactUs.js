@@ -15,7 +15,7 @@ const ContactUs = () => {
                 </div>
                 <div className={'flex flex-col w-1/2 px-2'}>
 
-                    <label htmlFor="">First Name</label>
+                    <label htmlFor="">Last Name</label>
                     <input type="text" className={'rounded  bg-light_gray py-3 border-none focus:border'}
                            placeholder={"Type Here"}/>
                 </div>
@@ -32,7 +32,7 @@ const ContactUs = () => {
                            placeholder={"Type Here"}/>
                 </div>
                 <div className={'flex flex-col w-full px-2'}>
-                    <label htmlFor="">Phone</label>
+                    <label htmlFor="">Message</label>
                     <textarea className={'rounded  bg-light_gray py-3 border-none focus:border h-32'}
                               placeholder={"Type Here"}></textarea>
                 </div>

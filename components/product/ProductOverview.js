@@ -6,7 +6,7 @@ import DotIndicator from "@/components/common/DotIndicator";
 
 const ProductOverview = ({product}) => {
     return (
-        <div className={'flex flex-col lg:flex-row lg:px-40 mt-32 lg:h-[80vh]'}>
+        <div className={'flex flex-col lg:flex-row lg:px-40 mt-32 lg:h-[65vh]'}>
             <div className="w-full p-2 lg:w-4/12 lg:h-[300px] ">
                 <ProductImageSlider product={product}/>
             </div>
