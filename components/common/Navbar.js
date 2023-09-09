@@ -36,18 +36,18 @@ const Navbar = () => {
                         <Link className="inline-block py-2 px-4 text-white no-underline " href={"/search"}>Products</Link>
                     </li>
                     <li className="mr-3">
-                        <Link className="inline-block py-2 px-4 text-white no-underline " href="#">About</Link>
+                        <Link className="inline-block py-2 px-4 text-white no-underline " href="#about">About</Link>
                     </li>
                     <li className="mr-3">
-                        <Link className="inline-block py-2 px-4 text-white no-underline " href="#">Service</Link>
+                        <Link className="inline-block py-2 px-4 text-white no-underline " href="#services">Service</Link>
                     </li>
                     <li className="mr-3">
-                        <Link className="inline-block py-2 px-4 text-white no-underline " href="#">FAQ</Link>
+                        <Link className="inline-block py-2 px-4 text-white no-underline " href="#faq">FAQ</Link>
                     </li>
 
                     <li className="mr-3">
                         <a className="inline-block py-2 px-4 text-white no-underline rounded-full border border-[#158319] "
-                           href="#">Contact Us</a>
+                           href="#contact">Contact Us</a>
                     </li>
                     <li className="mt-4 lg:mt-0 ml-4 flex gap-2 items-center">
                         <Image src={GlobeIcon} alt={"Language Icon"}/>

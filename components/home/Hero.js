@@ -23,7 +23,7 @@ const Hero = () => {
             swiper.slideTo(index)
     };
     return (
-        <div className={' md:px-8 py-16  md:py-40   '}>
+        <div className={'lg:px-40 md:px-8 py-16  md:py-40   '}>
 
             <div className="flex flex-col md:flex-row-reverse justify-between items-center gap-y-2 ">
 

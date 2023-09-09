@@ -10,7 +10,7 @@ import Product from "@/components/common/Product";
 import {products} from "@/utils/constants";
 const Products = () => {
     return (
-        <div className={'w-full xl:px-40 bg-[#E6EAED] py-16  '}>
+        <div id={"products"} className={'w-full xl:px-40 bg-[#E6EAED] py-16  '}>
 
             <h1 className={'text-center font-bold text-5xl khula-family'}>Our Products</h1>
             <h4 className={'text-center  text-xl khula-family'}>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio.</h4>

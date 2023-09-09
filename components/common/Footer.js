@@ -2,6 +2,7 @@ import React from 'react';
 import Image from "next/image";
 import Logo from "@/public/assets/images/logo.png"
 import {BiMailSend, BiSend} from "react-icons/bi";
+import Link from "next/link";
 
 const Footer = () => {
     return (
@@ -23,19 +24,19 @@ const Footer = () => {
                             <h2 className="mb-6 text-2xl font-semibold text-green">Resources</h2>
                             <ul className="text-gray-500 dark:text-gray-400 font-medium">
                                 <li className="mb-4">
-                                    <a href="" className="hover:underline text-white">Home</a>
+                                    <Link href="/" className="hover:underline text-white">Home</Link>
                                 </li>
                                 <li className="mb-4">
-                                    <a href="" className="hover:underline text-white">About</a>
+                                    <Link href="/#about" className="hover:underline text-white">About</Link>
                                 </li>
                                 <li className="mb-4">
-                                    <a href="" className="hover:underline text-white">Services</a>
+                                    <Link href="/#services" className="hover:underline text-white">Services</Link>
                                 </li>
                                 <li className="mb-4">
-                                    <a href="" className="hover:underline text-white">Products</a>
+                                    <Link href="/search" className="hover:underline text-white">Products</Link>
                                 </li>
                                 <li className="mb-4">
-                                    <a href="" className="hover:underline text-white">FAQ</a>
+                                    <Link href="/#faq" className="hover:underline text-white">FAQ</Link>
                                 </li>
                             </ul>
                         </div>
@@ -43,19 +44,20 @@ const Footer = () => {
                             <h2 className="mb-6 text-2xl font-semibold text-green">Company</h2>
                             <ul className="text-gray-500 dark:text-gray-400 font-medium">
                                 <li className="mb-4">
-                                    <a href="" className="hover:underline text-white">Address</a>
+                                    <Link href="/" className="hover:underline text-white">Address</Link>
                                 </li>
                                 <li className="mb-4">
-                                    <a href="" className="hover:underline text-white">About</a>
+                                    <Link href="/#about" className="hover:underline text-white">About</Link>
+
                                 </li>
                                 <li className="mb-4">
-                                    <a href="" className="hover:underline text-white">Services</a>
+                                    <Link href="/#services" className="hover:underline text-white">Services</Link>
                                 </li>
                                 <li className="mb-4">
-                                    <a href="" className="hover:underline text-white">Products</a>
+                                    <Link href="/search" className="hover:underline text-white">Products</Link>
                                 </li>
                                 <li className="mb-4">
-                                    <a href="" className="hover:underline text-white">FAQ</a>
+                                    <Link href="/#faq" className="hover:underline text-white">FAQ</Link>
                                 </li>
                             </ul>
                         </div>

@@ -6,7 +6,7 @@ import ServiceItem from "@/components/home/ServiceItem";
 
 const OurServices = () => {
     return (
-        <div className={'lg:px-40'}>
+        <div id={"services"} className={'lg:px-40'}>
             <h3 className={`khula-family font-semibold text-xl text-green text-center`}>Our Services</h3>
             <h3 className={`khula-family font-bold text-4xl  text-center mt-3`}>What We Do!</h3>
 

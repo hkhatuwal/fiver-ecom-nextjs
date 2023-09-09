@@ -6,7 +6,7 @@ const Faq = () => {
      const[selectedFaq,setSelectedFaq]=useState(0)
 
     return (
-        <div className={'px-2 xl:px-40 pt-24'}>
+        <div id={"faq"} className={'px-2 xl:px-40 pt-24'}>
 
             <h1 className={'text-center font-semibold text-5xl khula-family'}>FAQ</h1>
 

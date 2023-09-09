@@ -6,7 +6,7 @@ import Button from "@/components/common/Button";
 
 const AboutUs = () => {
     return (
-        <div className={' w-full bg-white xl:px-40 flex items-center py-24'}>
+        <div id={"about"} className={' w-full bg-white xl:px-40 flex items-center py-24'}>
 
             <div className="flex w-full flex-col md:flex-row ">
                 <div className="flex-1">

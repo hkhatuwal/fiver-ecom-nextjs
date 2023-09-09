@@ -3,7 +3,7 @@ import Button from "@/components/common/Button";
 
 const ContactUs = () => {
     return (
-        <div className={'px-2 xl:px-40 py-24'}>
+        <div id={"contact"} className={'px-2 xl:px-40 py-24'}>
             <h1 className={'text-center font-semibold text-5xl khula-family'}>Contact Us</h1>
 
 
