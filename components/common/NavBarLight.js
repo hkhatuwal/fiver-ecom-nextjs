@@ -5,6 +5,7 @@ import Image from "next/image";
 import GlobeIcon from "@/public/assets/images/globe.svg";
 import Logo from "@/public/assets/images/logo-black.png";
 import Link from "next/link";
+import {RxCross1} from "react-icons/rx";
 
 const NavbarLight = () => {
     const [isVisible,setIsVisible]=useState(false)
@@ -28,8 +29,9 @@ const NavbarLight = () => {
                 </button>
             </div>
 
-            <div className={`w-full flex-grow lg:flex lg:items-center lg:w-auto lg:bg-none  h-screen lg:h-auto  pt-6 lg:pt-0 ${isVisible?'bg-white absolute top-[8vh] left-0 z-50':'hidden'}`}
+            <div className={`w-full flex-grow lg:flex lg:items-center lg:w-auto lg:bg-none  h-screen lg:h-auto  pt-6 lg:pt-0 ${isVisible?'bg-white fixed top-0 left-0 z-50':'hidden'}`}
                  id="nav-content">
+                <RxCross1 onClick={()=>setIsVisible(false)} size={22} className={'text-right float-right text-green_dark mr-3 lg:hidden'}/>
 
                 <ul className="list-reset lg:flex justify-end flex-1 items-center text-xl tracking-wider">
                     <li className="mr-3">

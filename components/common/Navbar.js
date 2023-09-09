@@ -3,6 +3,8 @@ import React, {useState} from 'react';
 import Image from "next/image";
 import GlobeIcon from "@/public/assets/images/globe.svg";
 import Link from "next/link";
+import {BiCross} from "react-icons/bi";
+import {RxCross1} from "react-icons/rx";
 
 const Navbar = () => {
     const [isVisible,setIsVisible]=useState(false)
@@ -26,8 +28,10 @@ const Navbar = () => {
                 </button>
             </div>
 
-                <div className={`w-full flex-grow lg:flex lg:items-center xl:w-auto lg:bg-none  h-screen xl:h-auto  pt-6 lg:pt-0  ${isVisible?'bg-green_dark absolute top-[8vh] left-0 z-50':'hidden'}`}
+                <div className={`w-full flex-grow lg:flex lg:items-center xl:w-auto lg:bg-none  h-screen xl:h-auto  pt-6 lg:pt-0  ${isVisible?'bg-green_dark fixed top-0 left-0 z-50':'hidden'}`}
                  id="nav-content">
+
+                    <RxCross1 onClick={()=>setIsVisible(false)} size={22} className={'text-right float-right text-white mr-3 lg:hidden'}/>
                 <ul className="list-reset lg:flex justify-end flex-1 items-center text-xl tracking-wider">
                     <li className="mr-3">
                         <Link className="inline-block py-2 px-4 text-white no-underline " href="#">Home</Link>
