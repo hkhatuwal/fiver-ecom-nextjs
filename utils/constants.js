@@ -54,7 +54,7 @@ export const products = [
         ],
         image: "/assets/images/products/producr13.png",
 
-        images: ["/assets/images/products/product1.png", "/assets/images/products/product2.png", "/assets/images/products/product3.png", "/assets/images/products/product4.png"]
+        images: ["/assets/images/products/producr13.png", "/assets/images/products/product2.png", "/assets/images/products/product3.png", "/assets/images/products/product4.png"]
     },
     {
         title: "AC Connector",
