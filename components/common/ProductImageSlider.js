@@ -39,7 +39,7 @@ const ProductImageSlider = ({product}) => {
                 className="mySwiper mt-6"
             >
                 {product.images.map((image) => <SwiperSlide key={image}>
-                    <Image className={'w-full h-full '}
+                    <Image className={'w-full h-full cursor-pointer  aspect-square object-contain border border-black rounded-3xl '}
                            src={image}  height={200} width={200}
                            alt={"product image"}/>
                 </SwiperSlide>)}
