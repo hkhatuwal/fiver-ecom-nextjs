@@ -52,7 +52,8 @@ export const products = [
                 rating: 3
             }
         ],
-        image: "/assets/images/products/product1.png",
+        image: "/assets/images/products/producr13.png",
+
         images: ["/assets/images/products/product1.png", "/assets/images/products/product2.png", "/assets/images/products/product3.png", "/assets/images/products/product4.png"]
     },
     {

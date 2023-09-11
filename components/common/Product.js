@@ -7,7 +7,7 @@ const Product = ({slug,image,title,price,rating,hideRating=false,hidePrice=false
     return (
        <Link href={"/product/"+slug}>
            <div  className={'flex justify-center items-center flex-col cursor-pointer '}>
-               <Image className={'w-full p-6'} src={image} alt={""} width={300} height={300}/>
+               <Image className={'w-full p-6  aspect-square'} src={image} alt={""} width={300} height={300}/>
                <h3 className={`text-3xl font-extrabold ${hidePrice?'hidden':''}` }>${price}</h3>
                <h4 className={'text-xl font-bold '}>{title}</h4>
                <div className={`flex gap-1 ${hideRating?'hidden':''}`}>
