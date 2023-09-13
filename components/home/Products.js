@@ -1,6 +1,6 @@
 "use client"
-import React from 'react';
-import {Pagination} from "swiper/modules";
+import React, {useEffect, useState} from 'react';
+import {Autoplay, Pagination} from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 // Import Swiper styles
 import "swiper/css";
@@ -9,6 +9,13 @@ import Image from "next/image";
 import Product from "@/components/common/Product";
 import {products} from "@/utils/constants";
 const Products = () => {
+
+    const [isLoaded, setLoaded] = useState(false);
+    useEffect(() => {
+        setTimeout(()=>{
+            setLoaded(true)
+        },30)
+    }, []);
     return (
         <div id={"products"} className={'w-full xl:px-40 bg-[#E6EAED] py-16  '}>
 
@@ -44,8 +51,13 @@ const Products = () => {
                 pagination={{
                     clickable: true,
                 }}
-                modules={[Pagination]}
-                className="mySwiper  m-auto mt-5 lg:h-96"
+
+                autoplay={{
+                    delay: 1500,
+                    disableOnInteraction: false,
+                }}
+                modules={[Pagination,Autoplay]}
+                className={`mySwiper  m-auto mt-5 lg:h-96 anim-r-to-l ${isLoaded ? 'loaded' : ''}`}
             >
                 {products.map((product)=><SwiperSlide className={'py-8'} key={product.title}>
                     <Product {...product}/>
@@ -80,8 +92,12 @@ const Products = () => {
                 pagination={{
                     clickable: true,
                 }}
-                modules={[Pagination]}
-                className="mySwiper lg:h-96"
+                autoplay={{
+                    delay: 1500,
+                    disableOnInteraction: false,
+                }}
+                modules={[Pagination,Autoplay]}
+                className={`mySwiper lg:h-96  anim-l-to-r ${isLoaded ? 'loaded' : ''}`}
             >
                 {products.sort(()=>.5 - Math.random()).map((product)=><SwiperSlide className={'py-8'} key={product.title+"2"}>
                     <Product {...product}/>
